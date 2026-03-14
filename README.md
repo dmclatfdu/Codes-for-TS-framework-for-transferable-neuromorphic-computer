@@ -1,4 +1,4 @@
-# Transferable Neuromorphic Computing: Invariance from Variation
+# Transferable Neuromorphic Computer
 
 
 
