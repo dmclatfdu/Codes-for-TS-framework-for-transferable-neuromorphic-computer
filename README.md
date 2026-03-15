@@ -19,7 +19,7 @@ There are nine code files and a data folder in total, which are:
 
 
 ### Data file folder
-The data file folder stores the **experimentally measured data**. It will also stores the results of RC when running the above programs. We are willing to provide the whole experimental data to the editors and reviewers. In the following describes the basic information of the data (file/folder name shown in the detailed directory).
+The data file folder stores the **experimentally measured data**. It will also stores the results of RC when running the above programs. We are willing to provide all experimental data to the reviewers and editors, and will make them publicly available upon manuscript publication. In the following describes the basic information of the data (file/folder name shown in the detailed directory).
 
 | File/Folder Name | Description |
 |-----------|-------------|
