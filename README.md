@@ -41,7 +41,7 @@ The data file folder stores the **experimentally measured data**. It will also s
 
 **III.** The code in **RC_Arrhythmia.py and RC_Digit_TiOx_1000trial.py would take some time**, about 3 hours and 1 hour respectively (we use the Intel Core Ultra7 155H with 32 GB RAM).
 
-**IV.** **[Neglectable if only running the RC with the given data]** The **librosa library** (used in Voice_Inputs.py) **sometimes meets the problem**: osError cannot load library 'libsndfile.dll':error 0x7e. **To solve this problem**, you may have to manually do the following steps: **(1)** **locate the directory which reports the error** (when using anaconda to create an environment, it is most likely .conda/envs/your_env_name/Lib/site-packages); **(2)** create a folder named **_soundfile_data** in the directory; **(3)** put the file **libsndfile_64bit.dll (provided in this repository)** in the _soundfile_data folder. After the procedures above, run the code again to check if the problem is fixed.
+**IV.** **[Neglectable when only running the RC with the given data]** The **librosa library** (used in Voice_Inputs.py) **sometimes meets the problem**: osError cannot load library 'libsndfile.dll':error 0x7e. **To solve this problem**, you may have to manually do the following steps: **(1)** **locate the directory which reports the error** (when using anaconda to create an environment, it is most likely .conda/envs/your_env_name/Lib/site-packages); **(2)** create a folder named **_soundfile_data** in the directory; **(3)** put the file **libsndfile_64bit.dll (provided in this repository)** in the _soundfile_data folder. After the procedures above, run the code again to check if the problem is fixed.
 
 
 
