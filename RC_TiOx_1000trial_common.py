@@ -363,14 +363,14 @@ def plot_ts_vs_n(selected_csv: Union[str, Path], task: str, out_dir: Union[str, 
             for N in N_VALUES:
                 ts=df[(df.N_source_sets==N)&(df.display_method=="TS")].set_index("base_case_id").test_nrmse
                 data.append((c-ts).dropna().to_numpy())
-            ylabel=r"$A$ in NRMSE reduction"
+            ylabel=r"$G$ in NRMSE reduction"
         else:
             c=df[(df.N_source_sets==1)&(df.display_method=="classical")].set_index("base_case_id")[f"{metric}_percent"]
             data=[]
             for N in N_VALUES:
                 ts=df[(df.N_source_sets==N)&(df.display_method=="TS")].set_index("base_case_id")[f"{metric}_percent"]
                 data.append((ts-c).dropna().to_numpy())
-            ylabel=rf"$A$ in {METRIC_LABELS[metric]} (%)"
+            ylabel=rf"$G$ in {METRIC_LABELS[metric]} (%)"
         pos=np.arange(4); bp=ax.boxplot(data,positions=pos,widths=.52,patch_artist=True,showfliers=False); style_boxplot(bp,[STRIP["g2"]]*4)
         med=[np.median(x) for x in data]; mean=[np.mean(x) for x in data]
         ax.plot(pos,med,color=".1",marker="o",mfc="white",ms=3,lw=.9,label="Median")
